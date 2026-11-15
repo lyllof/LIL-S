@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Lil's</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="site.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="topo conteudo">
+            <a class="marca" href="index.html" aria-label="Inicio">
+                <img src="logo.png">
+            </a>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Inicio</a>
+                <a href="produtos.html">Cardapio</a>
+                <a href="pedidos.html">Pedidos</a>
+                <a href="carrinho.html">Carrinho
+                    <span id="total-carrinho">0</span>
+                </a>
+                <a href="perfil.html">Perfil</a>
+                <a href="entrar.html" id="link-entrar">Entrar</a>
+            </nav>
+            <button class="botao-tema" id="botao-tema" type="button">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/icons/moon.svg">
+                <span>Escuro</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="capa conteudo">
+            <div class="texto-capa">
+                <h1>Tem cheiro de domingo. Mas hoje e qualquer dia.</h1>
+                <p>Espetinhos, frango e combos de churrasco feitos para chegar quentinhos na sua mesa.</p>
+                <form class="busca-inicio" action="produtos.html" method="get">
+                    <label for="busca-inicio">Busca</label>
+                    <div class="busca-linha">
+                        <input id="busca-inicio" name="busca" type="search" placeholder="Busque no cardapio">
+                        <button type="submit">
+                            <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/icons/search.svg">
+                            <span>Buscar</span>
+                        </button>
+                    </div>
+                </form>
+                <a class="link-cardapio" href="produtos.html">Ver o cardapio completo</a>
+            </div>
+            <img class="foto-capa" src="https://images.unsplash.com/photo-1558030154-d3605e91d892?auto=format&fit=crop&w=1000&q=85">
+        </section>
+        <section class="destaques conteudo">
+            <h2>Os primeiros da fila</h2>
+            <div class="lista-destaques">
+                <article class="destaque">
+                    <img src="https://images.unsplash.com/photo-1771285119408-04cca3b35036?auto=format&fit=crop&w=700&q=85">
+                    <div>
+                        <h3>Combo Lil's</h3>
+                        <p>Carne, frango e acompanhamentos para dividir.</p>
+                        <a href="produtos.html">Ver no cardapio</a>
+                    </div>
+                </article>
+                <article class="destaque">
+                    <img src="https://images.unsplash.com/photo-1705359573325-f2006d5e459f?auto=format&fit=crop&w=700&q=85">
+                    <div>
+                        <h3>Espetinho de Frango</h3>
+                        <p>Dourado na grelha e pronto para matar a fome.</p>
+                        <a href="produtos.html">Ver no cardapio</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="conteudo rodape-interno">
+            <div>
+                <strong>LIL'S</strong>
+                <p>Churrasco para comer em casa, sem apagar a brasa.</p>
+            </div>
+            <div class="redes" aria-label="Redes sociais decorativas">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/icons/instagram.svg">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/icons/facebook.svg">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

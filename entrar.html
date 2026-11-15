@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar | Lil's</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/entrar.css">
+    <script src="site.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="topo conteudo">
+            <a class="marca" href="index.html" aria-label="Inicio">
+                <img src="logo.png">
+            </a>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Inicio</a>
+                <a href="produtos.html">Cardapio</a>
+                <a href="pedidos.html">Pedidos</a>
+                <a href="carrinho.html">Carrinho
+                    <span id="total-carrinho">0</span>
+                </a>
+                <a href="perfil.html">Perfil</a>
+                <a href="entrar.html" id="link-entrar">Entrar</a>
+            </nav>
+            <button class="botao-tema" id="botao-tema" type="button">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/icons/moon.svg">
+                <span>Escuro</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="titulo-pagina conteudo">
+            <h1>Entre ou crie sua conta</h1>
+            <p>Guarde seus dados neste navegador para pedir mais rapido.</p>
+        </section>
+        <section class="formularios conteudo">
+            <form id="form-entrar" class="caixa-formulario">
+                <h2>Ja sou da casa</h2>
+                <label for="email-entrar">Email</label>
+                <input id="email-entrar" type="email" maxlength="80" autocomplete="email" required>
+                <label for="senha-entrar">Senha</label>
+                <input id="senha-entrar" type="password" minlength="6" maxlength="30" autocomplete="current-password" required>
+                <button type="submit">Entrar</button>
+                <p id="aviso-entrar" class="aviso" role="status"></p>
+            </form>
+            <form id="form-cadastro" class="caixa-formulario cadastro">
+                <h2>Primeira vez por aqui?</h2>
+                <label for="nome-cadastro">Nome</label>
+                <input id="nome-cadastro" type="text" maxlength="60" autocomplete="name" required>
+                <label for="email-cadastro">Email</label>
+                <input id="email-cadastro" type="email" maxlength="80" autocomplete="email" required>
+                <label for="telefone-cadastro">Telefone</label>
+                <input id="telefone-cadastro" type="tel" inputmode="numeric" maxlength="15" placeholder="(00) 00000-0000" autocomplete="tel" required>
+                <label for="cep-cadastro">CEP</label>
+                <input id="cep-cadastro" type="text" inputmode="numeric" maxlength="9" placeholder="00000-000" autocomplete="postal-code" required>
+                <label for="endereco-cadastro">Endereco</label>
+                <input id="endereco-cadastro" type="text" maxlength="100" autocomplete="street-address" required>
+                <label for="senha-cadastro">Senha</label>
+                <input id="senha-cadastro" type="password" minlength="6" maxlength="30" autocomplete="new-password" required>
+                <button type="submit">Criar conta</button>
+                <p id="aviso-cadastro" class="aviso" role="status"></p>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="conteudo rodape-interno">
+            <div>
+                <strong>LIL'S</strong>
+                <p>Churrasco para comer em casa, sem apagar a brasa.</p>
+            </div>
+            <div class="redes" aria-label="Redes sociais decorativas">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/icons/instagram.svg">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/icons/facebook.svg">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

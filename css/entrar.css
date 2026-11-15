@@ -1,0 +1,16 @@
+.formularios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.cadastro {
+    border-color: var(--amarelo);
+}
+
+@media (max-width: 700px) {
+    .formularios {
+        grid-template-columns: 1fr;
+    }
+}

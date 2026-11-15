@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil | Lil's</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <script src="site.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="topo conteudo">
+            <a class="marca" href="index.html" aria-label="Inicio">
+                <img src="logo.png">
+            </a>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Inicio</a>
+                <a href="produtos.html">Cardapio</a>
+                <a href="pedidos.html">Pedidos</a>
+                <a href="carrinho.html">Carrinho
+                    <span id="total-carrinho">0</span>
+                </a>
+                <a href="perfil.html">Perfil</a>
+                <a href="entrar.html" id="link-entrar">Entrar</a>
+            </nav>
+            <button class="botao-tema" id="botao-tema" type="button">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/icons/moon.svg">
+                <span>Escuro</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="titulo-pagina conteudo">
+            <h1>Meu perfil</h1>
+            <p>Confira os dados guardados neste navegador.</p>
+        </section>
+        <section class="perfil-area conteudo">
+            <div id="perfil-vazio" class="perfil-vazio" hidden>
+                <h2>Voce ainda nao entrou</h2>
+                <p>Crie uma conta ou entre para ver seus dados.</p>
+                <a class="botao-link" href="entrar.html">Ir para Entrar</a>
+            </div>
+            <form id="form-perfil" class="caixa-formulario" hidden>
+                <h2>Seus dados</h2>
+                <label for="nome-perfil">Nome</label>
+                <input id="nome-perfil" type="text" maxlength="60" required>
+                <label for="email-perfil">Email</label>
+                <input id="email-perfil" type="email" maxlength="80" required>
+                <label for="telefone-perfil">Telefone</label>
+                <input id="telefone-perfil" type="tel" inputmode="numeric" maxlength="15" required>
+                <label for="cep-perfil">CEP</label>
+                <input id="cep-perfil" type="text" inputmode="numeric" maxlength="9" required>
+                <label for="endereco-perfil">Endereco</label>
+                <input id="endereco-perfil" type="text" maxlength="100" required>
+                <div class="perfil-botoes">
+                    <button type="submit">Salvar dados</button>
+                    <button id="sair" class="botao-claro" type="button">Sair</button>
+                </div>
+                <p id="aviso-perfil" class="aviso" role="status"></p>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="conteudo rodape-interno">
+            <div>
+                <strong>LIL'S</strong>
+                <p>Churrasco para comer em casa, sem apagar a brasa.</p>
+            </div>
+            <div class="redes" aria-label="Redes sociais decorativas">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/icons/instagram.svg">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/icons/facebook.svg">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

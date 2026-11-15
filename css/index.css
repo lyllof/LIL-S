@@ -1,0 +1,166 @@
+.capa {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 38px;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 55px;
+}
+
+.texto-capa h1 {
+    max-width: 610px;
+    margin-bottom: 22px;
+    font-size: 72px;
+    letter-spacing: -3px;
+}
+
+.texto-capa p {
+    max-width: 500px;
+    font-size: 18px;
+}
+
+.busca-inicio {
+    max-width: 470px;
+    margin-top: 30px;
+}
+
+.busca-inicio label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.busca-linha {
+    display: flex;
+}
+
+.busca-linha input {
+    min-width: 0;
+    flex: 1;
+    padding: 12px;
+    border: 2px solid var(--borda);
+    border-radius: 7px 0 0 7px;
+    background: var(--papel);
+    color: var(--texto);
+}
+
+.busca-linha button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border: 2px solid var(--borda);
+    border-left: 0;
+    border-radius: 0 7px 7px 0;
+    background: var(--amarelo);
+    color: #242424;
+    font-weight: bold;
+}
+
+.link-cardapio {
+    display: inline-block;
+    margin-top: 22px;
+    color: var(--vermelho);
+    font-weight: bold;
+}
+
+.foto-capa {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    background: var(--escuro);
+}
+
+.destaques {
+    padding-top: 60px;
+}
+
+.destaques h2 {
+    font-size: 48px;
+    letter-spacing: -2px;
+}
+
+.lista-destaques {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.destaque {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    min-height: 220px;
+    border: 2px solid var(--borda);
+    border-radius: 9px;
+    overflow: hidden;
+    background: var(--papel);
+}
+
+.destaque img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destaque div {
+    padding: 22px;
+}
+
+.destaque h3 {
+    font-size: 25px;
+}
+
+.destaque a {
+    color: var(--vermelho);
+    font-weight: bold;
+}
+
+@media (max-width: 1100px) {
+    .texto-capa h1 {
+        font-size: 56px;
+    }
+
+    .destaques h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 780px) {
+    .capa {
+        grid-template-columns: 1fr;
+    }
+
+    .texto-capa h1 {
+        font-size: 44px;
+    }
+
+    .foto-capa {
+        height: 380px;
+    }
+
+    .lista-destaques {
+        grid-template-columns: 1fr;
+    }
+
+    .destaques h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .texto-capa h1 {
+        font-size: 42px;
+    }
+
+    .foto-capa {
+        height: 300px;
+    }
+
+    .destaque {
+        grid-template-columns: 1fr;
+    }
+
+    .destaque img {
+        height: 210px;
+    }
+}

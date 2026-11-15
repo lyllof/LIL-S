@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Lil's</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <script src="site.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="topo conteudo">
+            <a class="marca" href="index.html" aria-label="Inicio">
+                <img src="logo.png">
+            </a>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Inicio</a>
+                <a href="produtos.html">Cardapio</a>
+                <a href="pedidos.html">Pedidos</a>
+                <a href="carrinho.html">Carrinho
+                    <span id="total-carrinho">0</span>
+                </a>
+                <a href="perfil.html">Perfil</a>
+                <a href="entrar.html" id="link-entrar">Entrar</a>
+            </nav>
+            <button class="botao-tema" id="botao-tema" type="button">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/icons/moon.svg">
+                <span>Escuro</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="titulo-pagina conteudo">
+            <h1>Seu carrinho</h1>
+        </section>
+        <section class="carrinho-area conteudo">
+            <div id="itens-carrinho" class="itens-carrinho"></div>
+            <aside class="resumo">
+                <h2>Resumo do pedido</h2>
+                <div class="resumo-linha">
+                    <span>Produtos</span>
+                    <strong id="total-preco">R$ 0,00</strong>
+                </div>
+                <p>O valor de entrega sera combinado depois.</p>
+                <button id="finalizar-pedido" type="button">Finalizar pedido</button>
+                <p id="aviso-carrinho" class="aviso" role="status"></p>
+            </aside>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="conteudo rodape-interno">
+            <div>
+                <strong>LIL'S</strong>
+                <p>Churrasco para comer em casa, sem apagar a brasa.</p>
+            </div>
+            <div class="redes" aria-label="Redes sociais decorativas">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/icons/instagram.svg">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/icons/facebook.svg">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

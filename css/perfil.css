@@ -1,0 +1,21 @@
+.perfil-area {
+    max-width: 700px;
+}
+
+.perfil-vazio {
+    padding: 28px;
+    border: 2px solid var(--borda);
+    border-radius: 9px;
+    background: var(--papel);
+}
+
+.perfil-botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.caixa-formulario .botao-claro {
+    background: transparent;
+    color: var(--texto);
+}
